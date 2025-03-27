@@ -11,6 +11,13 @@ La base de datos contendrá información sobre los artistas que se han presentad
   - Escenario en el que se presentaron
   - Horario de presentación
 
+ * **Tipos de datos:**
+Datos cualitativos:Género del artista y escenario.
+Datos cuantitativos: Año de presentación y horario de presentación.
+
+* **Periodo:**
+El periodo de levantamiento de estos datos abarcará desde la primera edición de Lollapalooza Chile en 2011 hasta la actualidad, con el objetivo de analizar la evolución de la brecha de género en la programación del festival. 
+
 * **Pertinencia**: 
 
 Estas bases son valiosas, ya que son medios periodísticos que se conocen por entregar información veraz y verificada que extrajeron de los sitios oficiales del Lollapalooza. Además, no solo entregan los nombres de los artistas, sino que suben la foto del afiche oficial de cada año, y muchas veces también la programación por día y horas. 
