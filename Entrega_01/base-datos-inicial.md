@@ -1,4 +1,7 @@
 # Base de datos inicial #
+* **Autor y publicación de datos:**
+La base de datos será creada por nuestro grupo. Los datos se obtendrán recopilando los *line ups* anuales de Lollapalooza Chile desde su primera edición en 2011 hasta la más reciente, utilizando diversas fuentes como los afiches oficiales del festival, medios de comunicación y registros históricos de los horarios y escenarios de presentación de los artistas, como el siguiente:
+https://www.biobiochile.cl/especial/lollapalooza/noticias/2020/03/03/cual-es-el-mejor-estos-son-los-10-carteles-musicales-de-lollapalooza-desde-su-llegada-a-chile.shtml
 
 * **Pertinencia**: 
 
