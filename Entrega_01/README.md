@@ -9,6 +9,21 @@ La brecha de género en la industria musical no es exclusiva de Lollapalooza Chi
 
 **Hipótesis:** Lollapalooza Chile ha mantenido una brecha de género en su programación, reflejando desigualdades estructurales en la industria musical.
 
+* **Antecedentes del tema**: 
+
+Ruidosa Fest realizó un estudio exhaustivo sobre la brecha de género en los festivales de música en Latinoamérica, analizando la representación femenina en eventos clave como Lollapalooza, Estéreo Picnic (Colombia), La Cumbre del Rock (Chile) y Cosquín Rock (Argentina) durante el período 2017-2019.
+Los resultados evidenciaron una alarmante desigualdad en la programación de estos festivales. En la mayoría de los casos, la participación de mujeres en los carteles no superó el 25%, con un máximo registrado del 23%. Sin embargo, la disparidad fue aún más extrema en algunos eventos, como el Cosquín Rock de Argentina, donde la cuota femenina se redujo a un mínimo del 2%, reflejando una clara falta de equidad en la industria musical en vivo.
+Este estudio pone en evidencia no solo la escasez de mujeres en los escenarios principales, sino también la ausencia de una perspectiva de género en la curaduría de los festivales, donde las bandas y solistas masculinos continúan dominando la oferta artística. A pesar de que en los últimos años ha habido un aumento en la visibilización de artistas mujeres y disidencias, los números muestran que la brecha persiste y que los cambios en la industria siguen siendo insuficientes.
+
+* **Datos**: 
+
+Para esta investigación, recopilaremos y analizaremos los carteles oficiales de cada edición del festival Lollapalooza desde 2011 hasta 2025. Consideraremos tanto los artistas anunciados en la revelación inicial del cartel como aquellos que fueron incorporados posteriormente debido a cambios o reemplazos. Además, necesitaremos obtener información detallada sobre cada banda o artista participante, lo que nos permitirá evaluar la brecha de género en cada agrupación.
+Nuestra fuente principal serán los carteles oficiales del festival, pero será fundamental complementar esta información con registros de modificaciones en la alineación de artistas desde el anuncio inicial hasta los días del evento. También realizaremos un trabajo de investigación para determinar la composición de cada banda en términos de género, lo que nos permitirá obtener un análisis más preciso.
+Para categorizar mejor a los artistas y bandas, estableceremos etiquetas específicas, como país de origen, rango etario y otros factores relevantes. Sin embargo, uno de los desafíos principales será la obtención de datos sobre la conformación interna de cada banda, ya que en muchos casos esta información no es fácilmente accesible. Para ello, recurriremos a fuentes especializadas, bases de datos musicales y comunidades de fanáticos, que suelen documentar con precisión la estructura de los grupos.
+En términos de disponibilidad de los datos, la mayoría de la información utilizada en nuestra investigación será de acceso público. Redes sociales, sitios web oficiales y portales de noticias especializados en música proporcionan una cobertura detallada de cada edición del festival, lo que nos permitirá corroborar los datos y validar su autenticidad.
+Dado que las fuentes principales incluyen publicaciones oficiales de Lollapalooza y medios de comunicación reconocidos, podemos considerar que la información recopilada cuenta con un grado significativo de confiabilidad. No obstante, constrastaremo todo lo publicado para llegar a lo más confiable en base a datos.
+
+
 * **Preguntas para responder**: 
 
 La principal pregunta que se puede responder con los datos es: 
