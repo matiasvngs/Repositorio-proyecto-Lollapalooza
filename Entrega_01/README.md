@@ -1,9 +1,12 @@
+
 # Presentación de la propuesta #
+# Brecha de Género en Lollapalooza Chile  
 
+Desde la llegada del festival **Lollapalooza a Chile en 2011**, se ha observado una representación desigual entre artistas, hombres y mujeres en su programación. Este festival, el evento musical internacional más grande que se realiza anualmente en el país, ha sido ampliamente disfrutado sin cuestionamientos sobre la **equidad de género** en su *line up*. Nuestro proyecto busca analizar y visibilizar la brecha de género en los **últimos 15 años** del festival.  
 
+A través del **análisis de datos** recopilados, se evidenciará que, a pesar de ser un festival moderno y global, la paridad de género sigue siendo una problemática presente. No solo se presentarán las cifras de participación femenina en comparación con la masculina, sino que también se profundizará en cómo se da esta participación, considerando factores como los horarios de presentación y la recurrencia de los artistas en el cartel del festival. Este estudio, basado en datos, permitirá una **reflexión crítica** sobre la equidad de género en la industria musical y en los eventos masivos contemporáneos.  
 
-
-
+La brecha de género en la industria musical no es exclusiva de Lollapalooza Chile, sino que es un fenómeno extendido en los escenarios latinoamericanos. Las mujeres han tenido una menor presencia en los festivales debido a la estructura histórica de la industria. A través del análisis de los datos, se buscará no solo evidenciar la disparidad, sino también aportar a la discusión sobre cómo se puede avanzar hacia una programación más equitativa en los eventos musicales masivos.  
 
 
 * **Preguntas para responder**: 
