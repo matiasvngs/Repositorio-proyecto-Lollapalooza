@@ -1,3 +1,5 @@
+# Análisis Individual María Gracia García #
+
 **¿Por qué es relevante para ti realizar este tema?**
 
 Este tema es importante para mi, ya que hablar sobre la brecha de género toma una importancia adicional siendo mujer, pues se me hace más fácil darme cuenta de la situación y darle la importancia que amerita. La brecha de género se puede ver casi en todos los ámbitos, no solo el músical. Sin embargo, en el área de los festivales de música, pienso que se es consciente de que no hay paridad de género, pero aún así la gente no se lo cuestiona tanto con tal de ver a uno de sus artistas favoritos. 
