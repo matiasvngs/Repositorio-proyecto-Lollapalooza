@@ -1,0 +1,1 @@
++ Al crear mi propia base de datos no contamos con una base de tablas de datos que limpiamos, sino que realicé el trabajo de juntar y limpiar los datos al mismo tiempo.
