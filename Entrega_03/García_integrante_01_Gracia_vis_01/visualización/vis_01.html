@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-fab35b7b45851fa3f4c30542dcbb8225"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "categoria", "scale": {"domain": ["Artistas Hombres", "Artistas Mujeres", "Bandas Hombres", "Bandas Mujeres", "Bandas Mixtas"], "range": ["#1b9e77", "#e76f51", "#457b9d", "#a29bfe", "#f4a261"]}, "title": "Categor\u00eda", "type": "nominal"}, "tooltip": [{"field": "a\u00f1o", "type": "nominal"}, {"field": "categoria", "type": "nominal"}, {"field": "cantidad", "type": "quantitative"}], "x": {"field": "a\u00f1o", "title": "A\u00f1o", "type": "nominal"}, "y": {"field": "cantidad", "title": "Cantidad de participantes", "type": "quantitative"}}, "height": 400, "title": "Participaci\u00f3n por g\u00e9nero y tipo en Lollapalooza Chile (2011\u20132025)", "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-fab35b7b45851fa3f4c30542dcbb8225": [{"a\u00f1o": "2025", "categoria": "Artistas Mujeres", "cantidad": 17}, {"a\u00f1o": "2024", "categoria": "Artistas Mujeres", "cantidad": 21}, {"a\u00f1o": "2023", "categoria": "Artistas Mujeres", "cantidad": 24}, {"a\u00f1o": "2022", "categoria": "Artistas Mujeres", "cantidad": 25}, {"a\u00f1o": "2019", "categoria": "Artistas Mujeres", "cantidad": 24}, {"a\u00f1o": "2018", "categoria": "Artistas Mujeres", "cantidad": 10}, {"a\u00f1o": "2017", "categoria": "Artistas Mujeres", "cantidad": 7}, {"a\u00f1o": "2016", "categoria": "Artistas Mujeres", "cantidad": 4}, {"a\u00f1o": "2015", "categoria": "Artistas Mujeres", "cantidad": 5}, {"a\u00f1o": "2014", "categoria": "Artistas Mujeres", "cantidad": 7}, {"a\u00f1o": "2013", "categoria": "Artistas Mujeres", "cantidad": 2}, {"a\u00f1o": "2012", "categoria": "Artistas Mujeres", "cantidad": 4}, {"a\u00f1o": "2011", "categoria": "Artistas Mujeres", "cantidad": 5}, {"a\u00f1o": "2025", "categoria": "Artistas Hombres", "cantidad": 33}, {"a\u00f1o": "2024", "categoria": "Artistas Hombres", "cantidad": 38}, {"a\u00f1o": "2023", "categoria": "Artistas Hombres", "cantidad": 38}, {"a\u00f1o": "2022", "categoria": "Artistas Hombres", "cantidad": 47}, {"a\u00f1o": "2019", "categoria": "Artistas Hombres", "cantidad": 57}, {"a\u00f1o": "2018", "categoria": "Artistas Hombres", "cantidad": 42}, {"a\u00f1o": "2017", "categoria": "Artistas Hombres", "cantidad": 21}, {"a\u00f1o": "2016", "categoria": "Artistas Hombres", "cantidad": 22}, {"a\u00f1o": "2015", "categoria": "Artistas Hombres", "cantidad": 27}, {"a\u00f1o": "2014", "categoria": "Artistas Hombres", "cantidad": 24}, {"a\u00f1o": "2013", "categoria": "Artistas Hombres", "cantidad": 15}, {"a\u00f1o": "2012", "categoria": "Artistas Hombres", "cantidad": 16}, {"a\u00f1o": "2011", "categoria": "Artistas Hombres", "cantidad": 15}, {"a\u00f1o": "2025", "categoria": "Bandas Mujeres", "cantidad": 0}, {"a\u00f1o": "2024", "categoria": "Bandas Mujeres", "cantidad": 1}, {"a\u00f1o": "2023", "categoria": "Bandas Mujeres", "cantidad": 0}, {"a\u00f1o": "2022", "categoria": "Bandas Mujeres", "cantidad": 2}, {"a\u00f1o": "2019", "categoria": "Bandas Mujeres", "cantidad": 2}, {"a\u00f1o": "2018", "categoria": "Bandas Mujeres", "cantidad": 0}, {"a\u00f1o": "2017", "categoria": "Bandas Mujeres", "cantidad": 2}, {"a\u00f1o": "2016", "categoria": "Bandas Mujeres", "cantidad": 0}, {"a\u00f1o": "2015", "categoria": "Bandas Mujeres", "cantidad": 2}, {"a\u00f1o": "2014", "categoria": "Bandas Mujeres", "cantidad": 2}, {"a\u00f1o": "2013", "categoria": "Bandas Mujeres", "cantidad": 0}, {"a\u00f1o": "2012", "categoria": "Bandas Mujeres", "cantidad": 1}, {"a\u00f1o": "2011", "categoria": "Bandas Mujeres", "cantidad": 1}, {"a\u00f1o": "2025", "categoria": "Bandas Hombres", "cantidad": 23}, {"a\u00f1o": "2024", "categoria": "Bandas Hombres", "cantidad": 31}, {"a\u00f1o": "2023", "categoria": "Bandas Hombres", "cantidad": 24}, {"a\u00f1o": "2022", "categoria": "Bandas Hombres", "cantidad": 20}, {"a\u00f1o": "2019", "categoria": "Bandas Hombres", "cantidad": 41}, {"a\u00f1o": "2018", "categoria": "Bandas Hombres", "cantidad": 47}, {"a\u00f1o": "2017", "categoria": "Bandas Hombres", "cantidad": 30}, {"a\u00f1o": "2016", "categoria": "Bandas Hombres", "cantidad": 25}, {"a\u00f1o": "2015", "categoria": "Bandas Hombres", "cantidad": 26}, {"a\u00f1o": "2014", "categoria": "Bandas Hombres", "cantidad": 27}, {"a\u00f1o": "2013", "categoria": "Bandas Hombres", "cantidad": 32}, {"a\u00f1o": "2012", "categoria": "Bandas Hombres", "cantidad": 38}, {"a\u00f1o": "2011", "categoria": "Bandas Hombres", "cantidad": 33}, {"a\u00f1o": "2025", "categoria": "Bandas Mixtas", "cantidad": 11}, {"a\u00f1o": "2024", "categoria": "Bandas Mixtas", "cantidad": 18}, {"a\u00f1o": "2023", "categoria": "Bandas Mixtas", "cantidad": 16}, {"a\u00f1o": "2022", "categoria": "Bandas Mixtas", "cantidad": 15}, {"a\u00f1o": "2019", "categoria": "Bandas Mixtas", "cantidad": 14}, {"a\u00f1o": "2018", "categoria": "Bandas Mixtas", "cantidad": 13}, {"a\u00f1o": "2017", "categoria": "Bandas Mixtas", "cantidad": 9}, {"a\u00f1o": "2016", "categoria": "Bandas Mixtas", "cantidad": 14}, {"a\u00f1o": "2015", "categoria": "Bandas Mixtas", "cantidad": 13}, {"a\u00f1o": "2014", "categoria": "Bandas Mixtas", "cantidad": 7}, {"a\u00f1o": "2013", "categoria": "Bandas Mixtas", "cantidad": 14}, {"a\u00f1o": "2012", "categoria": "Bandas Mixtas", "cantidad": 7}, {"a\u00f1o": "2011", "categoria": "Bandas Mixtas", "cantidad": 6}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
