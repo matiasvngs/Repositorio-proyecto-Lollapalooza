@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-0525d74fa0b488a05f6582174b9b090f"}, "facet": {"column": {"field": "G\u00e9nero musical", "type": "nominal"}}, "spec": {"mark": {"type": "arc"}, "encoding": {"color": {"field": "G\u00e9nero", "scale": {"domain": ["M", "F", "Mixto", "NB"], "range": ["#00BFFF", "#FFB6C1", "#DDA0DD", "#FFFACD"]}, "type": "nominal"}, "theta": {"field": "Cantidad", "type": "quantitative"}, "tooltip": [{"field": "G\u00e9nero", "type": "nominal"}, {"field": "Cantidad", "type": "quantitative"}]}, "height": 200, "width": 200}, "columns": 2, "title": "Distribuci\u00f3n de Artistas por G\u00e9nero Musical y G\u00e9nero", "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-0525d74fa0b488a05f6582174b9b090f": [{"G\u00e9nero musical": "Afrobeat", "G\u00e9nero": "F", "Cantidad": 1}, {"G\u00e9nero musical": "Afrobeat", "G\u00e9nero": "M", "Cantidad": 3}, {"G\u00e9nero musical": "Afrobeat", "G\u00e9nero": "Mixto", "Cantidad": 1}, {"G\u00e9nero musical": "Blues", "G\u00e9nero": "M", "Cantidad": 3}, {"G\u00e9nero musical": "Blues", "G\u00e9nero": "Mixto", "Cantidad": 3}, {"G\u00e9nero musical": "Cumbia", "G\u00e9nero": "M", "Cantidad": 7}, {"G\u00e9nero musical": "Cumbia", "G\u00e9nero": "Mixto", "Cantidad": 1}, {"G\u00e9nero musical": "Electr\u00f3nica", "G\u00e9nero": "F", "Cantidad": 20}, {"G\u00e9nero musical": "Electr\u00f3nica", "G\u00e9nero": "M", "Cantidad": 159}, {"G\u00e9nero musical": "Electr\u00f3nica", "G\u00e9nero": "Mixto", "Cantidad": 8}, {"G\u00e9nero musical": "Electr\u00f3nica", "G\u00e9nero": "NB", "Cantidad": 1}, {"G\u00e9nero musical": "Folk", "G\u00e9nero": "F", "Cantidad": 4}, {"G\u00e9nero musical": "Folk", "G\u00e9nero": "M", "Cantidad": 18}, {"G\u00e9nero musical": "Folk", "G\u00e9nero": "Mixto", "Cantidad": 2}, {"G\u00e9nero musical": "Funk", "G\u00e9nero": "F", "Cantidad": 1}, {"G\u00e9nero musical": "Funk", "G\u00e9nero": "M", "Cantidad": 4}, {"G\u00e9nero musical": "Funk", "G\u00e9nero": "Mixto", "Cantidad": 1}, {"G\u00e9nero musical": "Hip-hop/rap", "G\u00e9nero": "F", "Cantidad": 11}, {"G\u00e9nero musical": "Hip-hop/rap", "G\u00e9nero": "M", "Cantidad": 51}, {"G\u00e9nero musical": "Hip-hop/rap", "G\u00e9nero": "Mixto", "Cantidad": 1}, {"G\u00e9nero musical": "Indie", "G\u00e9nero": "F", "Cantidad": 1}, {"G\u00e9nero musical": "Indie", "G\u00e9nero": "M", "Cantidad": 8}, {"G\u00e9nero musical": "Indie", "G\u00e9nero": "NB", "Cantidad": 1}, {"G\u00e9nero musical": "Infantil", "G\u00e9nero": "F", "Cantidad": 2}, {"G\u00e9nero musical": "Infantil", "G\u00e9nero": "M", "Cantidad": 12}, {"G\u00e9nero musical": "Infantil", "G\u00e9nero": "Mixto", "Cantidad": 7}, {"G\u00e9nero musical": "Jazz", "G\u00e9nero": "F", "Cantidad": 1}, {"G\u00e9nero musical": "Jazz", "G\u00e9nero": "M", "Cantidad": 3}, {"G\u00e9nero musical": "Kpop", "G\u00e9nero": "M", "Cantidad": 2}, {"G\u00e9nero musical": "Metal", "G\u00e9nero": "M", "Cantidad": 8}, {"G\u00e9nero musical": "Metal", "G\u00e9nero": "Mixto", "Cantidad": 1}, {"G\u00e9nero musical": "M\u00fasica clasica", "G\u00e9nero": "Mixto", "Cantidad": 2}, {"G\u00e9nero musical": "Pop", "G\u00e9nero": "F", "Cantidad": 54}, {"G\u00e9nero musical": "Pop", "G\u00e9nero": "M", "Cantidad": 53}, {"G\u00e9nero musical": "Pop", "G\u00e9nero": "Mixto", "Cantidad": 10}, {"G\u00e9nero musical": "Punk", "G\u00e9nero": "F", "Cantidad": 1}, {"G\u00e9nero musical": "Punk", "G\u00e9nero": "M", "Cantidad": 18}, {"G\u00e9nero musical": "Punk", "G\u00e9nero": "Mixto", "Cantidad": 7}, {"G\u00e9nero musical": "R&B", "G\u00e9nero": "F", "Cantidad": 8}, {"G\u00e9nero musical": "R&B", "G\u00e9nero": "M", "Cantidad": 13}, {"G\u00e9nero musical": "Reggae", "G\u00e9nero": "F", "Cantidad": 1}, {"G\u00e9nero musical": "Reggae", "G\u00e9nero": "M", "Cantidad": 30}, {"G\u00e9nero musical": "Reggae", "G\u00e9nero": "Mixto", "Cantidad": 3}, {"G\u00e9nero musical": "Reggaeton", "G\u00e9nero": "F", "Cantidad": 7}, {"G\u00e9nero musical": "Reggaeton", "G\u00e9nero": "M", "Cantidad": 16}, {"G\u00e9nero musical": "Regional M\u00e9xicano", "G\u00e9nero": "M", "Cantidad": 2}, {"G\u00e9nero musical": "Rock", "G\u00e9nero": "F", "Cantidad": 13}, {"G\u00e9nero musical": "Rock", "G\u00e9nero": "M", "Cantidad": 190}, {"G\u00e9nero musical": "Rock", "G\u00e9nero": "Mixto", "Cantidad": 17}, {"G\u00e9nero musical": "Rock and Roll", "G\u00e9nero": "M", "Cantidad": 3}, {"G\u00e9nero musical": "Show", "G\u00e9nero": "M", "Cantidad": 5}, {"G\u00e9nero musical": "Trap", "G\u00e9nero": "F", "Cantidad": 9}, {"G\u00e9nero musical": "Trap", "G\u00e9nero": "M", "Cantidad": 28}, {"G\u00e9nero musical": "Tropical", "G\u00e9nero": "M", "Cantidad": 2}, {"G\u00e9nero musical": "Tropical", "G\u00e9nero": "Mixto", "Cantidad": 1}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
