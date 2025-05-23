@@ -1,6 +1,6 @@
 # Documentación
 
-° ¿Cómo se realizó el proceso de visualización?
+**¿Cómo se realizó el proceso de visualización?**
 
 1. Revise los comentarios de la entrega pasada. Revise los datos y corregi filas. Algunas que tenia mal escrito algunos nomres o tenia filas duplicadas.
 2. Luego, basandome en lo que puso en los comentarios y lo que veia decidi de que iba a tratar mi grafico. La diferencia de género que se presentaba en cada género musical.
