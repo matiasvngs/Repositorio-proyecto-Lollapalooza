@@ -1,0 +1,11 @@
+# Brecha de Género en los Géneros Musicales
+
+Lollapalooza Chile es un festival que celebra la gran diversidad musical que existe. En un mismo día, sobre sus escenarios suena rock, pop, rap, electrónica y, hasta, música infantil. Es un lugar donde los distintos estilos musicales se mezclan y los públicos se cruzan, creando así un espacio abierto para distintas expresiones. Pero si prestamos un poco más de atención, hay una contradicción que llama la atención y es que, aunque los géneros musicales son variados, los géneros de los artistas que se presentan no lo son tanto.
+
+Al revisar quiénes han sido parte del festival en todas las ediciones chilenas, descubrimos que la gran mayoría son hombres. Es una diferencia tan notoria que resulta difícil de ignorar, pero al mismo tiempo, pasa de forma desapercibida por muchos. Por esta razón, decidimos armar una visualización que compara los siguientes datos de los artistas: si eran hombres, mujeres, bandas mixtas o personas no binarias con el estilo de música que hacían.
+
+Los resultados confirmaron que, en casi todos los géneros musicales, los hombres dominan. En la mayoría de casos, como el rock, el trap o el metal, casi no hay presencia femenina o diversa. En otros casos, como el pop o reggaetón, hay un poco más de variedad, pero los hombres siguen siendo la mayoría. Al mirar los gráficos, esta diferencia se vuelve más evidente: en cada estilo musical, el color que usamos para representar a los hombres se impone a los otros, llegando a ocupar todo el espacio.
+
+Esto genera una gran contradicción. ¿Cómo es posible que en un festival tan variado musicalmente, las voces que lo representan sean tan poco diversas? 
+
+La industria musical, como muchas otras, viene cargada de desigualdades que se arrastran desde hace décadas. A veces, por costumbre, por comodidad o ignorancia, se repiten los mismos nombres, sin mirar más allá. Actualmente, existen muchos artistas de distintos géneros mundialmente o nacionalmente reconocidos, pero no se les da el espacio en el festival para presentarse. 
