@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-32b83fc5f4a1340494a8c5d0a52cd55e"}, "mark": {"type": "arc"}, "encoding": {"color": {"field": "G\u00e9nero", "type": "nominal"}, "theta": {"field": "Cantidad", "type": "quantitative"}, "tooltip": [{"field": "G\u00e9nero", "type": "nominal"}, {"field": "Cantidad", "type": "quantitative"}]}, "height": 400, "title": "Distribuci\u00f3n de G\u00e9nero entre Headliners", "width": 400, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-32b83fc5f4a1340494a8c5d0a52cd55e": [{"G\u00e9nero": "Masculino", "Cantidad": 46}, {"G\u00e9nero": "Femenino", "Cantidad": 10}, {"G\u00e9nero": "Mixto", "Cantidad": 3}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
