@@ -1,10 +1,22 @@
-header h1 {
-  font-size: 3rem;
-  font-weight: 700;     
-  line-height: 1.2;     
-  margin: 0.5rem 0;  
+html, body{
+  margin: 0;
+  padding: 0;
 }
 
+.hero-full{
+  background: url("foto.jpg") top center / contain no-repeat;
+  min-height: 35vh;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  margin-top: 0;
+}
+
+
+body{
+  max-width: 1000px;        
+  margin: 0 auto;
+}
 
 body{
   font-family: Arial, sans-serif;
