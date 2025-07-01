@@ -15,6 +15,9 @@
 
 <link rel="stylesheet" href="estilo.css"/>
 
+<link rel="stylesheet"
+      href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -118,13 +121,6 @@
       En relación al género infantil a excepción del primer año en 2011, todos los demás están dominados por las bandas mixtas. Lo cuál confirma que una gran parte de la participación de las mujeres es en uno de los escenarios secundarios y con un objetivo que no es el objetivo principal del Lollapalooza.
     </p>
       
-      
-      
-
-   
-
-
-
 
     <div id="graf-burbujas" style="max-width:800px;margin:2rem auto;"></div>
 
@@ -134,6 +130,13 @@
 <section class="bloque">
   <h1> ¿Y dónde están los chilenos y chilenas? </h1>
   <iframe src="grafico_artistas_chilenos_por_genero.html" width="800" height="500" style="border: none;"></iframe>
+
+  <h2> Las artistas chilenas que más se han repetido en los escenarios </h2>
+
+<div class="swiper swiper-chilenas">
+  <div class="swiper-wrapper" id="ranking-chilenas"> </div>
+  <div class="swiper-pagination"></div> 
+</div>
 
 </section>
    
@@ -161,6 +164,57 @@
 
 <script src="script.js"></script>
 
+
+<script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+/* Datos: nombre, # repeticiones, archivo de foto */
+const rankingCL = [
+  { nombre:'Ana Tijoux',              rep:5, img:'Ana.jpg' },
+  { nombre:'Francisca Valenzuela',    rep:4, img:'Fran.jpg' },
+  { nombre:'Javiera Mena',            rep:3, img:'Javiera.jpg' },
+  { nombre:'Rubio',                   rep:3, img:'Rubio.jpeg' },
+  { nombre:'Nicole',                  rep:2, img:'Nicole.jpg' },
+  { nombre:'Mariel Mariel',           rep:2, img:'Mariel.jpg' },
+  { nombre:'Yael Meyer',              rep:2, img:'Yael.jpg' },
+  { nombre:'Camila Moreno',           rep:2, img:'Camila.jpg' },
+  { nombre:'Mon Laferte',             rep:2, img:'Mon.jpg' },
+  { nombre:'Natalia Contesse',        rep:2, img:'Natalia.jpg' },
+  { nombre:'Valesuchi',               rep:2, img:'valushi.webp' }
+];
+
+/* Construye las tarjetas */
+const cont = document.getElementById('ranking-chilenas');
+rankingCL.forEach((a,i)=>{
+  const slide = document.createElement('div');
+  slide.className = 'swiper-slide';
+  slide.innerHTML = `
+    <div class="card-artista">
+      <img src="img/artistas/${a.img}" alt="${a.nombre}">
+      <h3>${i+1}. ${a.nombre}</h3>
+      <p>${a.rep} ×</p>
+    </div>`;
+  cont.appendChild(slide);
+});
+
+/* Inicializa Swiper (sin flechas) */
+new Swiper('.swiper-chilenas', {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+  grabCursor: true,              // arrastre con mouse/táctil
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  breakpoints: {                 // responsive
+    0:    { slidesPerView: 1.2 },
+    600:  { slidesPerView: 2.2 },
+    1024: { slidesPerView: 3.3 }
+  }
+});
+
+</script>
 </body>
 
 </html>
