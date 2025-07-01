@@ -15,6 +15,9 @@
 
 <link rel="stylesheet" href="estilo.css"/>
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=League+Spartan:wght@400;700&display=swap">
+
+
 <link rel="stylesheet"
       href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
 
@@ -101,7 +104,8 @@
 
   <!-- TERCER BLOQUE: Segundo gráfico a la izquierda, texto a la derecha -->
   <div style="display: flex; align-items: flex-start; gap: 40px;">
-    <iframe src="grafico_headliners_femenino (2).html" width="600" height="500" style="border: none;"></iframe>
+  
+  <div id="mapa" style="max-width:800px;margin:2rem auto;"></div> 
 
     <div style="max-width: 500px; font-size: 16px; line-height: 1.5; color: #333;">
       Pero la problemática no termina ahí. La limitada presencia de headliners mujeres se ve aún más compleja al analizar la representación nacional: ninguna de las pocas artistas que han accedido a este rol ha sido chilena. Esto evidencia una falta de reconocimiento y apoyo hacia las mujeres artistas locales en uno de los escenarios más importantes del país, minando la posibilidad de potenciar y visibilizar el talento nacional femenino. En paralelo, esta realidad ha dado paso a una creciente diversificación de nacionalidades entre las headliners femeninas, mostrando que, aunque el festival apuesta por abrir espacios para las mujeres, esos espacios no reflejan ni promueven la riqueza y diversidad del talento femenino chileno. Así, el Lollapalooza Chile se convierte en un espejo de una problemática más amplia: la dificultad que enfrentan las mujeres artistas, especialmente las locales, para alcanzar un lugar de liderazgo y protagonismo en la industria musical y en grandes eventos culturales.
@@ -131,15 +135,12 @@
   <h1> ¿Y dónde están los chilenos y chilenas? </h1>
   <iframe src="grafico_artistas_chilenos_por_genero.html" width="800" height="500" style="border: none;"></iframe>
 
+
   <h2>Ranking de artistas chilenas más repetidas</h2>
 
 <div class="swiper swiper-chilenas">
-  <div class="swiper-wrapper" id="ranking-chilenas"><!-- JS inyecta slides --></div>
-  <div class="swiper-pagination"></div> <!-- quita si no quieres bullets -->
+  <div class="swiper-wrapper" id="ranking-chilenas"></div>
 </div>
-
-</section>
-   
 
 
 <section class="bloque"> 
@@ -159,61 +160,51 @@
 
 </section>
 
-
-
-
 <script src="script.js"></script>
 
 <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
-
 <script>
-/* Carpeta real de imágenes */
-const basePath = 'img/';
+const base = 'img/';
 
-/* Ranking (nombre, repeticiones, archivo) — usa los nombres exactos de tus archivos */
 const rankingCL = [
-  { nombre:'Ana Tijoux',           rep:5, img: basePath+'Ana.jpg' },
-  { nombre:'Francisca Valenzuela', rep:4, img: basePath+'Fran.jpeg' },
-  { nombre:'Javiera Mena',         rep:3, img: basePath+'Javiera.jpg' },
-  { nombre:'Rubio',                rep:3, img: basePath+'Rubio.jpeg' },
-  { nombre:'Nicole',               rep:2, img: basePath+'Nicole.jpg' },
-  { nombre:'Mariel Mariel',        rep:2, img: basePath+'Mariel.jpg' },
-  { nombre:'Yael Meyer',           rep:2, img: basePath+'Yael.jpg' },
-  { nombre:'Camila Moreno',        rep:2, img: basePath+'Camila.jpg' },
-  { nombre:'Mon Laferte',          rep:2, img: basePath+'Mon.jpg' },
-  { nombre:'Natalia Contesse',     rep:2, img: basePath+'Natalia.jpeg' },
-  { nombre:'Valesuchi',            rep:2, img: basePath+'valushi.webp' }
+  { nombre:'Ana Tijoux',           rep:5, img:'Ana.jpg',      extra:'Hip-hop',        anios:[2011,2013,2014,2019,2023] },
+  { nombre:'Francisca Valenzuela', rep:4, img:'Fran.jpeg',    extra:'Pop rock',       anios:[2011,2014,2019,2022] },
+  { nombre:'Javiera Mena',         rep:3, img:'Javiera.jpg',  extra:'Electropop',     anios:[2012,2016,2022] },
+  { nombre:'Rubio',                rep:3, img:'Rubio.jpeg',   extra:'Art pop',        anios:[2019,2022,2024] },
+  { nombre:'Nicole',               rep:2, img:'Nicole.jpg',   extra:'Pop',            anios:[2012,2016] },
+  { nombre:'Mariel Mariel',        rep:2, img:'Mariel.jpg',   extra:'Latin pop',      anios:[2015,2023] },
+  { nombre:'Yael Meyer',           rep:2, img:'Yael.jpg',     extra:'Indie folk',     anios:[2013,2020] },
+  { nombre:'Camila Moreno',        rep:2, img:'Camila.jpg',   extra:'Folk rock',      anios:[2012,2015] },
+  { nombre:'Mon Laferte',          rep:2, img:'Mon.jpg',      extra:'Bolero rock',    anios:[2011,2014] },
+  { nombre:'Natalia Contesse',     rep:2, img:'Natalia.jpeg', extra:'Raíz folclórica',anios:[2014,2018] },
+  { nombre:'Valesuchi',            rep:2, img:'valushi.webp', extra:'Electrónica',    anios:[2015,2022] }
 ];
 
-/* Genera cada tarjeta */
-const cont = document.getElementById('ranking-chilenas');
+const wrapper = document.getElementById('ranking-chilenas');
 rankingCL.forEach((a,i) => {
-  const slide = document.createElement('div');
-  slide.className = 'swiper-slide';
-  slide.innerHTML = `
-    <div class="card-artista">
-      <img src="${a.img}" alt="${a.nombre}">
-      <h3>${i+1}. ${a.nombre}</h3>
-      <p>${a.rep} ×</p>
-    </div>`;
-  cont.appendChild(slide);
+  wrapper.insertAdjacentHTML('beforeend', `
+    <div class="swiper-slide">
+      <div class="card-artista">
+        <img src="${base}${a.img}" alt="${a.nombre}">
+        <h3><span class="rank">${i+1}°</span>${a.nombre}</h3>
+        <p class="rep">${a.rep} ×</p>
+        <p class="extra">${a.extra}</p>
+        <p class="years">Años: ${a.anios.join(', ')}</p>
+      </div>
+    </div>`);
 });
 
-/* Inicializa Swiper: arrastre (mouse/táctil) sin flechas */
 new Swiper('.swiper-chilenas', {
   slidesPerView: 3,
-  spaceBetween: 20,
-  loop: true,
+  spaceBetween: 24,
+  freeMode: { enabled: true, momentum: true },
   grabCursor: true,
   simulateTouch: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
+  mousewheel: { forceToAxis: true },
   breakpoints: {
-    0:   { slidesPerView: 1.2 },
-    600: { slidesPerView: 2.2 },
-    1024:{ slidesPerView: 3.3 }
+    0:{ slidesPerView:1.2 },
+    640:{ slidesPerView:2.2 },
+    1024:{ slidesPerView:3.3 }
   }
 });
 </script>

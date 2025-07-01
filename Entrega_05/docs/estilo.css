@@ -27,46 +27,58 @@ body{
   padding: 0 auto;
 }
 
-/* ——— Carrusel Artistas Chilenas ——— */
-
 .swiper-chilenas {
   padding: 2rem 0;
+  overflow: hidden;               
 }
 
+.swiper-chilenas .swiper-slide {
+  width: 240px !important;       
+  cursor: grab;                  
+}
+.swiper-chilenas .swiper-slide:active { cursor: grabbing; }
+
+
 .card-artista {
-  width: 220px;
   background: #fff;
+  border: 3px solid #e85343;      
   border-radius: 14px;
   box-shadow: 0 4px 10px rgba(0,0,0,.08);
-  text-align: center;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  text-align: center;
 }
 
 .card-artista img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
+  width: 100%; height: 240px; object-fit: cover;
 }
 
 .card-artista h3 {
   margin: .6rem 0 .2rem;
   font-size: 1rem;
+  line-height: 1.2;
   font-family: 'League Spartan', sans-serif;
 }
 
-.card-artista p {
-  margin: 0 0 1rem;
+.card-artista .rank {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  font-size: 1.2rem;
+  margin-right: .35rem;
   color: #e85343;
 }
 
-/* Bullet activo */
-.swiper-pagination-bullet-active {
-  background: #e85343 !important;
+.card-artista p.rep,
+.card-artista p.extra,
+.card-artista p.years {
+  text-align: center;
 }
 
+
+.card-artista p.rep   { margin: .2rem 0 .4rem; font-weight:700; color:#e85343; }
+.card-artista p.extra { margin: 0 0 .4rem;    font-size:.85rem; color:#666;    }
+.card-artista p.years { margin: 0 0 1rem;     font-size:.8rem;  color:#444;    }
 
   
   h1{

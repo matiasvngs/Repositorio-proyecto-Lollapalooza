@@ -14,5 +14,20 @@
       vegaEmbed('#graf-burbujas', specBurbujas, { mode: 'vega-lite', actions: false })
       .catch(err => console.error('Error burbujas:', err));
 
+      const specmapa={"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}, "background": "transparent"}, "layer": [{"mark": {"type": "geoshape", "fill": "#eeeeee", "stroke": "white"}}, {"mark": {"type": "geoshape", "stroke": "white"}, "encoding": {"color": {"field": "conteo", "legend": {"title": "Headliners"}, "scale": {"domain": [0, 6], "range": ["#FFE2DE", "#e85343"]}, "type": "quantitative"}, "tooltip": [{"field": "pais_es", "title": "Pa\u00eds", "type": "nominal"}, {"field": "conteo", "title": "Headliners femeninas", "type": "quantitative"}]}, "transform": [{"lookup": "id", "from": {"data": {"name": "data-bde3d6f493914f5fa18d947f4e25b6c2"}, "key": "iso_n3", "fields": ["pais_es", "conteo"]}}]}], "data": {"url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/world-110m.json", "format": {"feature": "countries", "type": "topojson"}}, "height": 420, "projection": {"type": "naturalEarth1"}, "title": "Headliners femeninas por pa\u00eds", "width": 720, "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json", "datasets": {"data-bde3d6f493914f5fa18d947f4e25b6c2": [{"pais_es": "Estados Unidos", "conteo": 6, "iso3": "USA", "iso_n3": 840}, {"pais_es": "Espa\u00f1a", "conteo": 1, "iso3": "ESP", "iso_n3": 724}, {"pais_es": "Canada", "conteo": 1, "iso3": "CAN", "iso_n3": 124}, {"pais_es": "Islandia", "conteo": 1, "iso3": "ISL", "iso_n3": 352}, {"pais_es": "Reino Unido", "conteo": 1, "iso3": "GBR", "iso_n3": 826}]}};
+
+      vegaEmbed('#mapa', specmapa, { mode: 'vega-lite', actions: false })
+      .catch(err => console.error('Error burbujas:', err));
 
   })(vegaEmbed);
+
+  wrapper.insertAdjacentHTML('beforeend', `
+    <div class="swiper-slide">
+      <div class="card-artista">
+        <img src="${base}${a.img}" alt="${a.nombre}">
+        <h3><span class="rank">${i+1}°</span>${a.nombre}</h3>
+        <p class="rep">${a.rep} presentación${a.rep > 1 ? 'es' : ''}</p>
+        <p class="extra">${a.extra}</p>
+        <p class="years">Años: ${a.anios.join(', ')}</p>
+      </div>
+    </div>`);
