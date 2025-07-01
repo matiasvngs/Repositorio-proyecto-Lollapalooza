@@ -27,6 +27,8 @@ body{
   padding: 0 auto;
 }
 
+/* ——— Carrusel Artistas Chilenas ——— */
+
 .swiper-chilenas {
   padding: 2rem 0;
 }
@@ -57,13 +59,14 @@ body{
 .card-artista p {
   margin: 0 0 1rem;
   font-weight: 700;
-  color: #e85343;          /* tu color corporativo */
+  color: #e85343;
 }
 
-/* Paginación (si la dejas) */
+/* Bullet activo */
 .swiper-pagination-bullet-active {
   background: #e85343 !important;
 }
+
 
   
   h1{

@@ -131,11 +131,11 @@
   <h1> ¿Y dónde están los chilenos y chilenas? </h1>
   <iframe src="grafico_artistas_chilenos_por_genero.html" width="800" height="500" style="border: none;"></iframe>
 
-  <h2> Las artistas chilenas que más se han repetido en los escenarios </h2>
+  <h2>Ranking de artistas chilenas más repetidas</h2>
 
 <div class="swiper swiper-chilenas">
-  <div class="swiper-wrapper" id="ranking-chilenas"> </div>
-  <div class="swiper-pagination"></div> 
+  <div class="swiper-wrapper" id="ranking-chilenas"><!-- JS inyecta slides --></div>
+  <div class="swiper-pagination"></div> <!-- quita si no quieres bullets -->
 </div>
 
 </section>
@@ -164,57 +164,61 @@
 
 <script src="script.js"></script>
 
-
 <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
 
 <script>
-/* Datos: nombre, # repeticiones, archivo de foto */
+/* Carpeta real de imágenes */
+const basePath = 'img/';
+
+/* Ranking (nombre, repeticiones, archivo) — usa los nombres exactos de tus archivos */
 const rankingCL = [
-  { nombre:'Ana Tijoux',              rep:5, img:'Ana.jpg' },
-  { nombre:'Francisca Valenzuela',    rep:4, img:'Fran.jpg' },
-  { nombre:'Javiera Mena',            rep:3, img:'Javiera.jpg' },
-  { nombre:'Rubio',                   rep:3, img:'Rubio.jpeg' },
-  { nombre:'Nicole',                  rep:2, img:'Nicole.jpg' },
-  { nombre:'Mariel Mariel',           rep:2, img:'Mariel.jpg' },
-  { nombre:'Yael Meyer',              rep:2, img:'Yael.jpg' },
-  { nombre:'Camila Moreno',           rep:2, img:'Camila.jpg' },
-  { nombre:'Mon Laferte',             rep:2, img:'Mon.jpg' },
-  { nombre:'Natalia Contesse',        rep:2, img:'Natalia.jpg' },
-  { nombre:'Valesuchi',               rep:2, img:'valushi.webp' }
+  { nombre:'Ana Tijoux',           rep:5, img: basePath+'Ana.jpg' },
+  { nombre:'Francisca Valenzuela', rep:4, img: basePath+'Fran.jpeg' },
+  { nombre:'Javiera Mena',         rep:3, img: basePath+'Javiera.jpg' },
+  { nombre:'Rubio',                rep:3, img: basePath+'Rubio.jpeg' },
+  { nombre:'Nicole',               rep:2, img: basePath+'Nicole.jpg' },
+  { nombre:'Mariel Mariel',        rep:2, img: basePath+'Mariel.jpg' },
+  { nombre:'Yael Meyer',           rep:2, img: basePath+'Yael.jpg' },
+  { nombre:'Camila Moreno',        rep:2, img: basePath+'Camila.jpg' },
+  { nombre:'Mon Laferte',          rep:2, img: basePath+'Mon.jpg' },
+  { nombre:'Natalia Contesse',     rep:2, img: basePath+'Natalia.jpeg' },
+  { nombre:'Valesuchi',            rep:2, img: basePath+'valushi.webp' }
 ];
 
-/* Construye las tarjetas */
+/* Genera cada tarjeta */
 const cont = document.getElementById('ranking-chilenas');
-rankingCL.forEach((a,i)=>{
+rankingCL.forEach((a,i) => {
   const slide = document.createElement('div');
   slide.className = 'swiper-slide';
   slide.innerHTML = `
     <div class="card-artista">
-      <img src="img/artistas/${a.img}" alt="${a.nombre}">
+      <img src="${a.img}" alt="${a.nombre}">
       <h3>${i+1}. ${a.nombre}</h3>
       <p>${a.rep} ×</p>
     </div>`;
   cont.appendChild(slide);
 });
 
-/* Inicializa Swiper (sin flechas) */
+/* Inicializa Swiper: arrastre (mouse/táctil) sin flechas */
 new Swiper('.swiper-chilenas', {
   slidesPerView: 3,
   spaceBetween: 20,
   loop: true,
-  grabCursor: true,              // arrastre con mouse/táctil
+  grabCursor: true,
+  simulateTouch: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true
   },
-  breakpoints: {                 // responsive
-    0:    { slidesPerView: 1.2 },
-    600:  { slidesPerView: 2.2 },
-    1024: { slidesPerView: 3.3 }
+  breakpoints: {
+    0:   { slidesPerView: 1.2 },
+    600: { slidesPerView: 2.2 },
+    1024:{ slidesPerView: 3.3 }
   }
 });
-
 </script>
+
+
 </body>
 
 </html>
