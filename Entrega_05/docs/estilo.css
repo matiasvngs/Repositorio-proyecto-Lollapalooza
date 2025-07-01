@@ -103,7 +103,7 @@ body{
   p{
     text-align: justify;  
     line-height: 1.6;    
-    margin: 0 0 1rem;
+    margin: 1rem 0;  
 }     
 
   
@@ -158,4 +158,42 @@ body{
   margin-top: 10px;
   font-size: 14px;
   color: #555;
+}
+
+.sabias-inpage{
+  border:3px solid #e85343;
+  border-radius:14px;
+  background:#fff8f6;
+  padding:1rem 1.2rem;
+  margin:2rem 0;
+  opacity:0;                              
+  transform:translateY(25px);
+  transition:opacity .6s ease, transform .6s ease;
+}
+
+
+.sabias-inpage.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.sabias-inpage summary{
+  cursor:pointer;
+  font-family:'Bungee',sans-serif;
+  font-size:1.05rem;
+  display:flex;align-items:center;gap:.6rem;
+  list-style:none;          
+}
+.sabias-inpage summary::after{ 
+  content:'▼'; margin-left:auto;
+  transition:transform .25s;
+}
+.sabias-inpage[open] summary::after{transform:rotate(180deg);}
+
+.sabias-inpage .icon {font-size:1.2rem;}
+.sabias-inpage p{
+  margin:.8rem 0 0;
+  line-height:1.5;
+  text-align:justify;
+  font-size:.9rem;
 }
