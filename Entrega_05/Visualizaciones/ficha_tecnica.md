@@ -19,3 +19,9 @@ Artistas Hombres - Artistas Mujeres - Bandas Hombres - Bandas Mujeres - Bandas M
 * Fuente: Elaboración propia a partir de una recopilación de datos manual, con información de los carteles oficiales y viendo noticias de cada año. Buscando a través de google y noticias de ese año la información de cada artista.
 * Características de los datos:  Contiene datos cualitativos de los arttistas y sus caracteristicas.
 * Variables:  artistas, composición, género, nacionalidad, género musical y debut.
+
+4. 
+* Nombre: Tabla Lineups.cvs
+* Fuente: Elaboración propia a partir de una recopilación de datos manual, año por año y su respectivo conteo. Con información de los carteles oficiales y viendo noticias de cada año para saber los artistas que se bajaron.
+* Características de los datos: Contiene datos cuantitativos, ya que es el conteo por género de cada artista, tanto solista como banda, que se presentó en el Lollapalooza durante 2011 a 2025.
+* Variables: Año-Dia-Minutos-Artista-Nacionalidad-Género-Escenario-Headliner
