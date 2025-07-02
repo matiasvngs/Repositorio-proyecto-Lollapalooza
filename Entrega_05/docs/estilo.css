@@ -1,20 +1,23 @@
-
 html {
   height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  height: 100%;                 
-  display: flex;               
+ }
+ 
+ 
+ body {
+  height: 100%;                
+  display: flex;              
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
   background: #f3c1d6;
   color: #000;
   font-family: Arial, sans-serif;
-}
+  position: relative; 
+ }
+ 
+ 
+ 
+
 
 .hero-full{
   background: url("foto.jpg") top center / contain no-repeat;
@@ -216,24 +219,30 @@ body {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  height: 400px; /* Puedes ajustar la altura */
+  height: 400px; 
   overflow: hidden;
 }
 
 .site-footer {
-  margin-top: auto;           /* empuja todo hacia arriba */
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  
-  background-color: #e85343;
-  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
   text-align: center;
-  padding: 1rem 0;
-  
-  font-family: 'League Spartan', sans-serif;
-  font-size: 0.9rem;
-}
-.site-footer p {
+  font-size: 14px;
+  background-color: #e04e3d;
+  color: white;
+  width: 100vw;                      
+  position: relative;
+  left: 50%;                       
+  right: 50%;                        
+  margin-left: -50vw;               
+  box-sizing: border-box;
+  margin-top: auto;                   
+ }
+ 
+ 
+ .site-footer p {
   margin: 0;
-}
+  white-space: nowrap;               
+ }
