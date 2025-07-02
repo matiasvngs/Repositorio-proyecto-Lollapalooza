@@ -13,3 +13,9 @@ Artistas Hombres - Artistas Mujeres - Bandas Hombres - Bandas Mujeres - Bandas M
 * Fuente: Elaboración propia de ambas tablas de datos de forma manual, año por año colaborando información de distintos portales de noticias, wikipedia e incluso revisando el instagram de los artistas y carteles oficiales.
 * Características de los datos:  Contiene datos cualitativos y cuantitativos, para demostrar como se realizaron las ediciones de Lollapalooza durante 2011 a 2025.
 * Variables:  año, género músical, tipo de artista y cantidad
+
+3. 
+* Nombres: Artistas Lollapalooza.csv
+* Fuente: Elaboración propia a partir de una recopilación de datos manual, con información de los carteles oficiales y viendo noticias de cada año. Buscando a través de google y noticias de ese año la información de cada artista.
+* Características de los datos:  Contiene datos cualitativos de los arttistas y sus caracteristicas.
+* Variables:  artistas, composición, género, nacionalidad, género musical y debut.
