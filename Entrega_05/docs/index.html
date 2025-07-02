@@ -12,6 +12,9 @@
 <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
 <link rel="stylesheet" href="estilo.css"/>
 
@@ -59,8 +62,19 @@
 
 <p>La escasa participación femenina en este rol se vuelve aún más evidente al observar otro dato clave: ninguna de las pocas mujeres que han encabezado una jornada ha sido chilena. Esta ausencia de artistas nacionales en la posición más alta del festival refuerza una doble exclusión: por género y por nacionalidad. En su lugar, la representación femenina en el escenario principal ha recaído en artistas extranjeras, lo que, si bien muestra una cierta apertura internacional, t
 
-   <iframe src="grafico de barra principal (2).html" width="600" height="500" style="border: none;"></iframe>
-</section>
+
+ <div id="graficoMV1"></div>
+
+ <p>La escasa participación femenina en este rol se vuelve aún más evidente al observar otro dato clave: ninguna de las pocas mujeres que han encabezado una jornada ha sido chilena. Esta ausencia de artistas nacionales en la posición más alta del festival refuerza una doble exclusión: por género y por nacionalidad. En su lugar, la representación femenina en el escenario principal ha recaído en artistas extranjeras, lo que, si bien muestra una cierta apertura internacional, t
+ 
+  <div class="grid-container">
+    <div id="graficoMV4" class="grafico"></div>
+    <div id="graficoMV5" class="grafico"></div>
+    <div id="graficoMV6" class="grafico"></div>
+    <div id="graficoMV7" class="grafico"></div>
+
+
+  </section>
 
 <details id="sabias-inpage" class="sabias-inpage">
   <summary>
@@ -78,12 +92,10 @@
   <h1>Los headliners</h1>
 
   <!-- PRIMER BLOQUE: Gráfico a la izquierda, texto a la derecha -->
-  <div style="display: flex; align-items: flex-start; gap: 40px; margin-bottom: 40px;">
-    <iframe src="grafico_diferencia_de_genero.html" width="600" height="500" style="border: none;"></iframe>
+  <div id="graficoMV2"></div>
+        </div>
+  Desde la creación de Lollapalooza, el concepto de "Headliner" ha sido fundamental en la conformación de sus carteles, ya que este artista es quien cierra el espectáculo y tiene la mayor presencia en minutos; sin embargo, a lo largo de la historia de Lollapalooza Chile, las mujeres han ocupado este rol de manera mínima.
 
-    <div style="max-width: 500px; font-size: 16px; line-height: 1.5; color: #333;">
-      Desde la creación de Lollapalooza, el concepto de "Headliner" ha sido fundamental en la conformación de sus carteles, ya que este artista es quien cierra el espectáculo y tiene la mayor presencia en minutos; sin embargo, a lo largo de la historia de Lollapalooza Chile, las mujeres han ocupado este rol de manera mínima.
-    </div>
   </div>
 
   <!-- SEGUNDO BLOQUE: Scrapbook horizontal -->
@@ -155,8 +167,7 @@
 
 <section class="bloque">
   <h1> ¿Y dónde están los chilenos y chilenas? </h1>
-  <iframe src="grafico_artistas_chilenos_por_genero.html" width="800" height="500" style="border: none;"></iframe>
-
+    <div id="graficoMV3"></div>
 
   <h2>Ranking de artistas chilenas más repetidas</h2>
 
@@ -174,6 +185,13 @@
 </p>
 
 <script src="script.js"></script>
+<script src="GraficosMV/Graficomv1.js"></script>
+<script src="GraficosMV/Graficomv2.js"></script>
+<script src="GraficosMV/Graficomv3.js"></script>
+<script src="GraficosMV/Graficomv4.js"></script>
+<script src="GraficosMV/Graficomv5.js"></script>
+<script src="GraficosMV/Graficomv6.js"></script>
+<script src="GraficosMV/Graficomv7.js"></script>
 
 <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
 <script>

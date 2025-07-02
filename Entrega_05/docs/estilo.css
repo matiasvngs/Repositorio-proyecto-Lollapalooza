@@ -200,21 +200,33 @@ body {
   text-align:justify;
   font-size:.9rem;
 }
+.vega-embed {
+  width: 100%;
+  display: flex;}
+.vega-embed details,
+.vega-embed details summary {
+  position: relative;}
 
-.site-footer {
-  margin-top: auto;           /* lo empuja al fondo de la ventana */
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
 
-  background-color: #e85343;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  font-family: 'League Spartan', sans-serif;
-  font-size: 0.9rem;
+  body {
+  background: "rgba(245,151,148,0)";
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
 }
 
-.site-footer p {
-  margin: 0;                  /* quita cualquier margen extra */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+.grafico {
+  background: "rgba(245,151,148,0)";
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  height: 400px; /* Puedes ajustar la altura */
+  overflow: hidden;
 }
