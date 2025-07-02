@@ -7,3 +7,11 @@
 
 3. Gráfico headliners femeninas por país Análisis: Acá queríamos mostrar que había un patrón con las headliners femeninas en relación a su nacional, pues de las 10 headliners femeninas 6 eran de Estados Unidos y ninguna de latinoamérica. Además, de evidenciar que de por sí son muy pocas headliners femeninas considerando que son 13 ediciones
 
+4. Gráfico de minutos por género en cada edición de Lollapalooza
+ Este gráfico complementa la idea central de la investigación: la presencia masculina domina los escenarios del festival. Al incorporar el factor tiempo, no solo observamos cuántos artistas de cada género participaron, sino también cuánto tiempo estuvieron en escena. Esto permite dimensionar la desigualdad desde otra perspectiva, donde la brecha de género se vuelve aún más evidente.
+5. Gráficos por escenario (principal, secundario, electrónica y Kidzapalooza)
+ Con estos cuatro gráficos buscamos mostrar cómo varía la participación por género según el tipo de escenario. En los escenarios principal y secundario, la presencia femenina es escasa, lo que refuerza la idea de que el protagonismo sigue siendo masculino. En cambio, en espacios como el escenario de música electrónica y Kidzapalooza, se observa una leve variación, aunque en general, las mujeres siguen siendo convocadas en roles secundarios o con menor visibilidad.
+6. Gráfico de los headliners
+ Este gráfico busca evidenciar que los artistas que encabezan el festival, cierran los escenarios principales y concentran la mayor atención —los llamados headliners— son en su gran mayoría hombres. Esta tendencia refuerza la idea de que la brecha de género no solo se mantiene, sino que se acentúa en los espacios de mayor protagonismo dentro del cartel de Lollapalooza.
+7. Gráfico de participación por género a nivel nacional
+ Con este gráfico quisimos mostrar, en primer lugar, la variación en la cantidad de artistas chilenos que han participado en las distintas ediciones del festival. A partir de ahí, el análisis revela que la brecha de género también se reproduce a nivel local: los hombres representan una mayoría clara entre los seleccionados nacionales, mientras que la presencia femenina sigue siendo considerablemente menor.
