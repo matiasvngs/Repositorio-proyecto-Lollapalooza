@@ -19,6 +19,15 @@
       vegaEmbed('#mapa', specmapa, { mode: 'vega-lite', actions: false })
       .catch(err => console.error('Error burbujas:', err));
 
+      
+
+
+
+
+
+
+      
+
   })(vegaEmbed);
 
   wrapper.insertAdjacentHTML('beforeend', `
