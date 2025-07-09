@@ -20,14 +20,6 @@
       .catch(err => console.error('Error burbujas:', err));
 
       
-
-
-
-
-
-
-      
-
   })(vegaEmbed);
 
   wrapper.insertAdjacentHTML('beforeend', `
@@ -41,3 +33,4 @@
       </div>
     </div>`);
 
+  
