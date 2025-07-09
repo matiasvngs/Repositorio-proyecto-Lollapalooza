@@ -2,6 +2,10 @@
 
 1. Análisis del diseño de la información y diseño de la interacción:
 
+La estructura narrativa de la página está organizada en forma de webstory, con un recorrido secuencial que guía al usuario por distintas secciones temáticas, cada una introducida por títulos destacados con tipografía llamativa y acompañada de subtítulos que contextualizan la información. Esta narrativa se desarrolla de forma lineal, con un enfoque progresivo que parte del diagnóstico general de la brecha de género en Lollapalooza Chile, para luego profundizar en distintos aspectos como los géneros musicales, la participación femenina o mixta, y los cambios a lo largo del tiempo.
+
+El recorrido que hace el usuario está diseñado para ser intuitivo y fluido. A medida que hace scroll, se encuentra con bloques de información bien delimitados, lo que facilita la comprensión sin sobrecargar visualmente. Cada visualización aparece justo después de una introducción que la explica o contextualiza, lo que permite que la interacción sea principalmente pasiva pero muy clara: no es necesario hacer clics ni tomar decisiones para avanzar en la historia.
+
 2. Comentarios sobre la crónica y textos:
 
 Decidimos distribuir la webstory a través de secciones temáticas que están divididas por los títulos en negro de letra bungee y los subtítulo de la páginas decidimos que sean verdes con un borde negro para que no se perdieran con el fondo. Esto lo decidimos para que haya variedad de estilo y no solo se vean los títulos negros de siempre. En relación al estilo narrativo cada elementos de la webstory visual y el contenido de la crónicas refuerzan nuestra hipótesis de que hay una gran brecha de género en el Lollapalooza a través de los visual cómo los colores como son los titulares por ejemplo ¿dónde están los chilenos…?. 

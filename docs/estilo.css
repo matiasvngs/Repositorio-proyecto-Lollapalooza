@@ -14,10 +14,16 @@ html {
   font-family: Arial, sans-serif;
   position: relative; 
  }
+  
  
- 
+ .bloque:last-of-type {
+  border-bottom: none;
+ }
  
 
+.bloque:last-of-type {
+  border-bottom: none;
+}
 
 .hero-full{
   background: url("foto.jpg") top center / contain no-repeat;
