@@ -207,10 +207,9 @@ html {
 }
 .vega-embed {
   width: 100%;
-  display: flex;}
-.vega-embed details,
-.vega-embed details summary {
-  position: relative;}
+  display: block !important;
+  max-width: 800px !important;
+}
 
 
 .grid-container {
