@@ -14,6 +14,29 @@ html {
   font-family: Arial, sans-serif;
   position: relative; 
  }
+
+ .site-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 14px;
+  background-color: #e04e3d;
+  color: white;
+  width: 100vw;                      
+  position: relative;
+  left: 50%;                       
+  right: 50%;                        
+  margin-left: -50vw;               
+  box-sizing: border-box;
+  margin-top: auto;                   
+ }
+
+ .site-footer p {
+  margin: 0;
+  white-space: nowrap;               
+ }
   
  
  .bloque:last-of-type {
@@ -57,6 +80,7 @@ html {
   overflow: hidden;
   text-align: center;
 }
+
 
 .card-artista img {
   width: 100%; height: 240px; object-fit: cover;
@@ -228,30 +252,6 @@ html {
   overflow: hidden;
 }
 
-.site-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 20px;
-  text-align: center;
-  font-size: 14px;
-  background-color: #e04e3d;
-  color: white;
-  width: 100vw;                      
-  position: relative;
-  left: 50%;                       
-  right: 50%;                        
-  margin-left: -50vw;               
-  box-sizing: border-box;
-  margin-top: auto;                   
- }
- 
- 
- .site-footer p {
-  margin: 0;
-  white-space: nowrap;               
- }
-
  .parallax-collage {
   position: relative;
   left: 50%;
@@ -266,12 +266,50 @@ html {
   z-index: 0;
 }
 
-.card-hombre {
-  border: 3px solid #3498db; /* Borde azul */
+.swiper-hombres {
+  padding: 2rem 0;
+  overflow: hidden;
+}
+.swiper-hombres .swiper-slide {
+  width: 240px !important;
+  cursor: grab;
+}
+.swiper-hombres .swiper-slide:active { cursor: grabbing; }
+
+
+.card-azul {           
+  border-color:#1976d2 !important;
+}
+.card-azul .rank,
+.card-azul p.rep {      
+  color:#1976d2;
 }
 
-.card-hombre .rank,
-.card-hombre .rep {
-  color: #3498db;
+.swiper-especiales {
+  padding: 2rem 0;
+  overflow: hidden;
+}
+.swiper-especiales .swiper-slide {
+  width: 240px !important;
+  cursor: grab;
+}
+.swiper-especiales .swiper-slide:active { cursor: grabbing; }
+
+
+.card-verde { border-color:#81c784 !important; }
+.card-verde .rank,
+.card-verde p.rep { color:#81c784; }  
+
+.card-artista {         
+  height: 430px;         
+  display: flex;
+  flex-direction: column;
+}
+
+
+.card-artista p.years{
+  flex: 1 1 auto;        
+  overflow-y: auto;      
+  margin-bottom: 1rem;   
 }
 

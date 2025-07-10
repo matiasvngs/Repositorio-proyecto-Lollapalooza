@@ -33,41 +33,4 @@
       </div>
     </div>`);
 
-    const baseH = 'img/';
-
-    const rankingH = [
-      { nombre:'Dr. Demencia',       rep:4, img:'dre.jpeg',   extra:'Rap satírico',    anios:[2012,2014,2019,2024] },
-      { nombre:'Ases Falsos',        rep:3, img:'ases.jpeg',  extra:'Pop rock',        anios:[2014,2016,2022] },
-      { nombre:'Movimiento Original',rep:3, img:'Mov.jpg',    extra:'Hip-hop reggae',  anios:[2015,2017,2023] },
-      { nombre:'Fermín IV',          rep:2, img:'Fer.jpg',    extra:'Hip-hop',         anios:[2013,2018] },
-      { nombre:'Lucho Vega',         rep:2, img:'Lucy.jpeg',  extra:'Indie folk',      anios:[2011,2016] }
-    ];
-    
-    const wrapperH = document.getElementById('ranking-hombres');
-    
-    rankingH.forEach((a, i) => {
-      wrapperH.insertAdjacentHTML('beforeend', `
-        <div class="swiper-slide">
-          <div class="card-artista card-hombre">
-            <img src="${baseH}${a.img}" alt="${a.nombre}">
-            <h3><span class="rank">${i+1}°</span>${a.nombre}</h3>
-            <p class="rep">${a.rep} presentación${a.rep > 1 ? 'es' : ''}</p>
-            <p class="extra">${a.extra}</p>
-            <p class="years">Años: ${a.anios.join(', ')}</p>
-          </div>
-        </div>`);
-    });
-    
-    new Swiper('.swiper-hombres', {
-      slidesPerView: 3,
-      spaceBetween: 24,
-      freeMode: { enabled: true, momentum: true },
-      grabCursor: true,
-      simulateTouch: true,
-      mousewheel: { forceToAxis: true },
-      breakpoints: {
-        0:{ slidesPerView:1.2 },
-        640:{ slidesPerView:2.2 },
-        1024:{ slidesPerView:3.3 }
-      }
-    });
+  

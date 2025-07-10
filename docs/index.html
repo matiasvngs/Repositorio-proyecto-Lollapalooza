@@ -24,6 +24,41 @@
 <link rel="stylesheet"
       href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
 
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  
+    new Swiper('.swiper-especiales', {
+      slidesPerView: 3,
+      spaceBetween: 24,
+      freeMode: { enabled:true, momentum:true },
+      grabCursor: true,
+      mousewheel: { forceToAxis:true },
+  
+      breakpoints:{
+        0:    { slidesPerView:1.2 },
+        640:  { slidesPerView:2.2 },
+        1024: { slidesPerView:3.3 }
+      }
+    });
+  
+  });
+
+  new Swiper('.swiper-hombres', {
+    slidesPerView: 3,
+    spaceBetween: 24,
+    freeMode: { enabled:true, momentum:true },
+    grabCursor: true,
+    mousewheel: { forceToAxis:true },
+    breakpoints:{
+      0:{ slidesPerView:1.2 },
+      640:{ slidesPerView:2.2 },
+      1024:{ slidesPerView:3.3 }
+    }
+  });
+
+  </script>
+
+
 </head>
 
 <body>
@@ -34,9 +69,7 @@
     <h1> Los ritmos dominados por un género: la brecha de género por género musical </h1>
 
     </section>
-<p>Hay géneros musicales que suenan con más fuerza que otros en Lollapalooza, pero también hay géneros de artistas que suenan menos. En estilos como el rock o el trap, las voces masculinas han sido protagonistas casi absolutas, mientras que en otros como el pop, aparecen algunas artistas mujeres o agrupaciones mixtas, aunque siguen siendo minoría. A medida que recorremos los distintos estilos que han pasado por el festival, se hace evidente una tendencia que se repite: los hombres dominan la escena, sin importar el ritmo que suene.</p>
-  <h2>los hombres dominan la escena, sin importar el ritmo que suene.</h2>
-  
+
 <div style="position: relative; width: 100%; height: 0; padding-top: 75.0000%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
  border-radius: 8px; will-change: transform;">
@@ -180,27 +213,23 @@
 
 <p>La escasa participación femenina en este rol se vuelve aún más evidente al observar otro dato clave: ninguna de las pocas mujeres que han encabezado una jornada ha sido chilena. Esta ausencia de artistas nacionales en la posición más alta del festival refuerza una doble exclusión: por género y por nacionalidad. En su lugar, la representación femenina en el escenario principal ha recaído en artistas extranjeras, lo que, si bien muestra una cierta apertura internacional, t
 
+
  <div id="graficoMV1"></div>
 
  <section class="parallax-collage"></section>
 
- <p>La brecha de género en Lollapalooza Chile no solo se refleja en la cantidad de artistas, sino también en el tiempo asignado en escena. De forma sostenida, las mujeres han ocupado apenas un tercio del tiempo total que se le otorga a los hombres en los escenarios del festival.
-</p>
-<p>Esta desigualdad también se evidencia en los extremos: la presentación con mayor duración fue la de Foo Fighters en 2012 —una banda compuesta íntegramente por hombres— con un show de dos horas y media. En contraste, las actuaciones más breves fueron la de Tribu Huni Kuin, agrupación mixta peruana que en 2019 ofreció un espectáculo cultural de solo 15 minutos, y la de Paloma Mami en ese mismo año, quien, pese a su popularidad, solo tuvo 20 minutos para su presentación musical.
-</p>
-  
+
+ <p>El desequilibrio de género en los carteles de Lollapalooza también se refleja en la distribución por escenarios. El festival cuenta con dos escenarios principales —el VTR Stage y el Banco de Chile Stage— que concentran la mayor atención y pueden albergar entre 30.000 y 40.000 personas cada uno. En contraste, los escenarios secundarios, que reciben menor visibilidad, tienen una capacidad aproximada de 5.000 asistentes.
+A esto se suman otros espacios como el escenario de música electrónica y Kidzapalooza, dedicado al público infantil. Este último es uno de los pocos espacios que presenta una programación con mayor diversidad y enfoque mixto.
+ 
   <div class="grid-container">
     <div id="graficoMV4" class="grafico"></div>
     <div id="graficoMV5" class="grafico"></div>
     <div id="graficoMV6" class="grafico"></div>
     <div id="graficoMV7" class="grafico"></div>
 
- <p> El desequilibrio de género en los carteles de Lollapalooza también se refleja en la distribución por escenarios. El festival cuenta con dos escenarios principales —el VTR Stage y el Banco de Chile Stage— que concentran la mayor atención y pueden albergar entre 30.000 y 40.000 personas cada uno. En contraste, los escenarios secundarios, que reciben menor visibilidad, tienen una capacidad aproximada de 5.000 asistentes.
- </p>
-  A esto se suman otros espacios como el escenario de música electrónica y Kidzapalooza, dedicado al público infantil. Este último es uno de los pocos espacios que presenta una programación con mayor diversidad y enfoque mixto.
- </p>
+
   </section>
- 
 
 
 <details id="sabias-inpage" class="sabias-inpage">
@@ -275,9 +304,6 @@
     <div id="graf-burbujas" style="max-width:800px;"></div>
 
 
-  
-
-
     </section>
 
     <details id="sabias-inpage-2" class="sabias-inpage">
@@ -302,6 +328,70 @@ Los artistas chilenos representan el 44% del total de músicos que han pasado po
 La participación chilena en Lollapalooza no solo ha sido numerosa, sino también marcada por la recurrencia de ciertos nombres. Varios artistas nacionales han sido convocados en múltiples ediciones, consolidando su lugar en la escena local del festival. Esta repetición se observa tanto en las propuestas masculinas como femeninas, revelando una cierta concentración de oportunidades dentro del cartel chileno.
 </p>
 
+<h2> Ranking Shows y bandas más repetidos </h2>
+
+<div class="swiper swiper-especiales">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <div class="card-artista card-verde">
+        <img src="img/31.jpg" alt="31 Minutos">
+        <h3><span class="rank">1°</span>31 Minutos</h3>
+        <p class="rep">6 ×</p>
+        <p class="extra">Infantil</p>
+        <p class="years">Años: 2012, 2012, 2014, 2014, 2018, 2018</p>
+      </div>
+    </div>
+
+ 
+    <div class="swiper-slide">
+      <div class="card-artista card-verde">
+        <img src="img/bell.webp" alt="Lucybell">
+        <h3><span class="rank">2°</span>Lucybell</h3>
+        <p class="rep">4 ×</p>
+        <p class="extra">Rock</p>
+        <p class="years">Años: 2014, 2017, 2022, 2025 
+
+        </p>
+      </div>
+    </div>
+
+    
+    <div class="swiper-slide">
+      <div class="card-artista card-verde">
+        <img src="img/red.jpg" alt="Batalla de Gallos">
+        <h3><span class="rank">3°</span>Batalla de Gallos</h3>
+        <p class="rep">4 ×</p>
+        <p class="extra">Hip-Hop / Rap</p>
+        <p class="years">Años: 2019, 2023, 2024, 2025</p>
+      </div>
+    </div>
+
+    
+    <div class="swiper-slide">
+      <div class="card-artista card-verde">
+        <img src="img/school.webp" alt="School of Rock">
+        <h3><span class="rank">4°</span>School of Rock</h3>
+        <p class="rep">7 ×</p>
+        <p class="extra">Infantil</p>
+        <p class="years">Años: 2016, 2018, 2022, 2022, 2023, 2024, 2025</p>
+      </div>
+    </div>
+
+    
+    <div class="swiper-slide">
+      <div class="card-artista card-verde">
+        <img src="img/ti.jpg" alt="Ana Tijoux">
+        <h3><span class="rank">5°</span>Ana Tijoux</h3>
+        <p class="rep">5 ×</p>
+        <p class="extra">Hip-Hop</p>
+        <p class="years">Años: 2011, 2014, 2015, 2019, 2024</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 </p>
  En los carteles de Lollapalooza, los shows grupales dirigidos al público infantil, especialmente para Kidzapalooza, han sido los que más se han repetido. Destacan principalmente las presentaciones de School of Rock, presentes tanto en las ediciones chilenas como en las estadounidenses desde 2016, acumulando siete participaciones hasta la fecha. También resalta el icónico 31 Minutos, que ha participado en seis ediciones.
 </p>
@@ -312,12 +402,62 @@ La participación chilena en Lollapalooza no solo ha sido numerosa, sino tambié
 <h2>Ranking de artistas chilenos más repetidos</h2>
 
 <div class="swiper swiper-hombres">
-  <div class="swiper-wrapper" id="ranking-hombres"></div>
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <div class="card-artista card-azul">
+        <img src="img/Fer.jpg"  alt="Fernando Milagros">
+        <h3><span class="rank">1°</span>Fernando Milagros</h3>
+        <p class="rep">4 ×</p>
+        <p class="extra"> Rock</p>
+        <p class="years">Años: 2012, 2015, 2018, 2022</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="card-artista card-azul">
+        <img src="img/Lucy.jpeg" alt="Lucybell">
+        <h3><span class="rank">2°</span>Lucybell</h3>
+        <p class="rep">4 ×</p>
+        <p class="extra">Rock</p>
+        <p class="years">Años: 2014, 2017, 2022, 2025</p>
+      </div>
+    </div>
+
+   
+    <div class="swiper-slide">
+      <div class="card-artista card-azul">
+        <img src="img/Mov.jpg" alt="Movimiento Original">
+        <h3><span class="rank">3°</span>Movimiento Original</h3>
+        <p class="rep">4 ×</p>
+        <p class="extra">Hip-hop / Rap </p>
+        <p class="years">Años: 2014, 2016, 2018, 2024</p>
+      </div>
+    </div>
+
+  
+    <div class="swiper-slide">
+      <div class="card-artista card-azul">
+        <img src="img/dre.jpeg" alt="DrefQuila">
+        <h3><span class="rank">4°</span>DrefQuila</h3>
+        <p class="rep">3 ×</p>
+        <p class="extra">Trap</p>
+        <p class="years">Años: 2019, 2022, 2025</p>
+      </div>
+    </div>
+
+  
+    <div class="swiper-slide">
+      <div class="card-artista card-azul">
+        <img src="img/ases.jpeg" alt="Ases Falsos">
+        <h3><span class="rank">5°</span>Ases Falsos</h3>
+        <p class="rep">3 ×</p>
+        <p class="extra">Rock</p>
+        <p class="years">Años: 2016, 2019, 2023</p>
+      </div>
+    </div>
+
 </div>
-
-<script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
-<script src="ranking-hombres.js"></script>
-
 
 </p>
 En el ámbito masculino, la repetición de artistas chilenos ha estado marcada por una trayectoria que cruza distintos escenarios del festival. Nombres como Fernando Milagros, Movimiento Original y Lucybell han sido parte de múltiples ediciones de Lollapalooza Chile, y su presencia ha oscilado entre los espacios de menor visibilidad, el escenario secundario y el escenario principal, evidenciando una evolución dentro del cartel y en su reconocimiento ante el público.
@@ -337,6 +477,7 @@ En el ámbito masculino, la repetición de artistas chilenos ha estado marcada p
 <p>A partir del quinto puesto del ranking se aprecia otro patrón: ninguna artista supera las dos presentaciones. Esto da cuenta de la dificultad para las chilenas de tener continuidad en este festival al no ser de las más conocidas.
    Dentro del ranking destaca la presencia del pop. Sin embargo, a pesar de la aparente variedad, ninguna de estas onces artistas han sido headliner en las trece ediciones del festival.
 </p>
+<p> Otros aspectos importantes es que algunas artistas se repiten en presentarse en el Lollapalooza, pero su variación de escenario no cambia, es decir, se suelen mantener en los mismo escenarios y la mayoría de ellos no son de los principales. Por ejemplo, Ana Tijoux nunca ha tocado en un escenario principal a pesar de sus 5 invitaciones. </p>
 
 <script src="script.js"></script>
 <script src="GraficosMV/Graficomv1.js"></script>
@@ -420,12 +561,9 @@ new Swiper('.swiper-chilenas', {
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/c1eojidXyUU?si=pfxM6CGrhnuYCf0y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
   <footer class="site-footer">
     <p>@2025  María Gracia García-Matías Venegas-Catalina Reyes</p>
   </footer>
-
-  <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
 
 </body>
 
