@@ -86,12 +86,8 @@
 <p>La industria musical, como muchas otras, viene cargada de desigualdades que se arrastran desde hace décadas. A veces, por costumbre o por comodidad, se repiten los mismos nombres, sin mirar más allá. Lo más paradójico es que hoy existen muchas artistas mujeres, no binaries y bandas mixtas con reconocimiento nacional e internacional, listas para subirse a cualquier escenario. Pero no están y eso también suena.</p>
 
 <p>Esa desigualdad no ocurre en el vacío, está cruzada por el protagonismo que ha tenido cada estilo musical dentro del festival. No todos los géneros han estado presentes con la misma fuerza ni en la misma cantidad de ediciones. Algunos han sido parte del cartel desde el comienzo; otros han ido ganando espacio con los años. Observar cómo ha evolucionado la presencia de cada género musical a lo largo del tiempo permite entender mejor por qué algunos concentran más artistas que otros. Y, con eso, también entender parte del desequilibrio.</p>
+
 <div id="vis"></div> 
- <style>
-        #vis {
-            background-color: transparent;
-        }
-    </style>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
@@ -99,7 +95,14 @@
 <script>
   (function(vegaEmbed) {
     var spec = {
-      "config": {"view": {"continuousWidth": 300, "continuousHeight": 300 }},
+      "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+      "background": "rgba(245,151,148,0)", // Establecer el fondo aquí
+      "config": {
+        "view": {
+          "continuousWidth": 300,
+          "continuousHeight": 300
+        }
+      },
       "data": {
         "name": "data-adadf3a4d318dd86f8a531fb8da7635d"
       },
@@ -109,7 +112,7 @@
           "field": "Genero_musical",
           "scale": {
             "domain": ["Electrónica", "Otros", "Urbano", "Pop", "Rock"],
-            "range": ["#c9d849", "#e85343", "#58b4cb", "#f9c74f", "#6a4c93"]
+            "range": ["#c9d849", "#e85343", "#58b4cb", "#f9c74f", "#ff6a5a"]
           },
           "title": "Género Musical",
           "type": "nominal"
