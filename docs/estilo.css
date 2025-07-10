@@ -265,3 +265,13 @@ html {
   background-size: cover;
   z-index: 0;
 }
+
+.card-hombre {
+  border: 3px solid #3498db; /* Borde azul */
+}
+
+.card-hombre .rank,
+.card-hombre .rep {
+  color: #3498db;
+}
+
